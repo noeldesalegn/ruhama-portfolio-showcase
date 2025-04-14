@@ -9,7 +9,7 @@ type TimelineItem = {
   date: string;
   description: string;
   icon: React.ReactNode;
-  category: 'education' | 'achievement';
+  category: 'education' | 'achievement' | 'Ongoing';
 };
 
 const timelineData: TimelineItem[] = [
@@ -17,7 +17,7 @@ const timelineData: TimelineItem[] = [
     id: 1,
     title: "Software Engineering",
     subtitle: "Dire Dawa University",
-    date: "2021 - Present",
+    date: "2022 - Present",
     description: "Currently in my 3rd year of studying Software Engineering, focusing on systems design, algorithms, and full-stack development.",
     icon: <BookOpen />,
     category: 'education'
@@ -26,10 +26,10 @@ const timelineData: TimelineItem[] = [
     id: 2,
     title: "SkillSwap Hackathon",
     subtitle: "Team Lead & Developer",
-    date: "2023",
-    description: "Led a team in developing a skill-exchange platform during a 48-hour hackathon. Built with MERN stack and TypeScript.",
+    date: "2025",
+    description: "Leading a team in developing a skill-exchange platform for a hackathon. Built with MERN stack and TypeScript.",
     icon: <Award />,
-    category: 'achievement'
+    category: "Ongoing",
   },
   {
     id: 3,

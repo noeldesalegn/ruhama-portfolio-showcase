@@ -19,49 +19,38 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "KidCare Hub",
-    description: "A role-based platform connecting parents and caregivers, featuring user authentication, real-time chat, and service booking.",
-    image: "https://images.unsplash.com/photo-1611250282006-4484dd3fba6f?q=80&w=500&auto=format&fit=crop",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-    github: "https://github.com/ruhamabek/kidcare-hub",
-    demo: "https://kidcare-hub.vercel.app",
+    title: "Nike Clone",
+    description: "A visually stunning clone of the Nike website, showcasing modern UI/UX design and responsive layouts.",
+    image: "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_500,c_limit/1f5e6c7d-4e3e-4c5e-8c2b-4b1b8b8b8b8b/nike-just-do-it.jpg",
+    tags: ["React", "Tailwind"],
+    github: "https://github.com/ruhamabek/nike",
     category: ["web", "featured"]
   },
   {
     id: 2,
-    title: "Clearance Management System",
-    description: "A digital system to streamline university clearance processes, replacing paper-based workflows with a user-friendly web application.",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=500&auto=format&fit=crop",
-    tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/ruhamabek/clearance-system",
+    title: "Skill Swap Platform (Ongoing)",
+    description: "A platform where users can exchange skills and services, developed during a hackathon. Includes user profiles, skill matching, and messaging.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=500&auto=format&fit=crop",
+    tags: ["MERN", "TypeScript", "Tailwind CSS", "Redux" , "Socket.io" , "Better-auth"],
+    github: "https://github.com/ruhamabek/SkillSwap",
     category: ["web", "featured"]
   },
   {
     id: 3,
-    title: "Skill Swap Platform",
-    description: "A platform where users can exchange skills and services, developed during a hackathon. Includes user profiles, skill matching, and messaging.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=500&auto=format&fit=crop",
-    tags: ["MERN", "TypeScript", "Tailwind CSS", "Redux"],
-    github: "https://github.com/ruhamabek/skill-swap",
-    demo: "https://skill-swap-platform.netlify.app",
-    category: ["web", "featured"]
-  },
-  {
-    id: 4,
     title: "Food Ordering Website",
     description: "A responsive website for ordering food online with features like menu browsing, cart management, and order tracking.",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=500&auto=format&fit=crop",
-    tags: ["React", "Firebase", "Tailwind CSS", "Stripe"],
-    github: "https://github.com/ruhamabek/food-order",
+    tags: ["MERN", "Auth0", "Tailwind CSS", "Stripe" , "TypeScript"],
+    github: "https://github.com/ruhamabek/Food-ordering",
     category: ["web"]
   },
   {
-    id: 5,
+    id: 4,
     title: "Amazon Clone Frontend",
     description: "A frontend clone of Amazon's e-commerce platform with product listings, search functionality, and shopping cart features.",
     image: "https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=500&auto=format&fit=crop",
-    tags: ["React", "CSS", "Context API"],
-    github: "https://github.com/ruhamabek/amazon-clone",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/ruhamabek/javascript-amazon-project",
     category: ["web"]
   }
 ];
@@ -84,29 +73,7 @@ const ProjectsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex justify-center flex-wrap gap-2 mb-8">
-          <Button 
-            variant={filter === 'all' ? 'default' : 'outline'} 
-            onClick={() => setFilter('all')}
-            className="mb-2"
-          >
-            All Projects
-          </Button>
-          <Button 
-            variant={filter === 'featured' ? 'default' : 'outline'} 
-            onClick={() => setFilter('featured')}
-            className="mb-2"
-          >
-            Featured
-          </Button>
-          <Button 
-            variant={filter === 'web' ? 'default' : 'outline'} 
-            onClick={() => setFilter('web')}
-            className="mb-2"
-          >
-            Web Apps
-          </Button>
-        </div>
+ 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (

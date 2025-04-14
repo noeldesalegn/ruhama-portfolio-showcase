@@ -18,22 +18,22 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
     icon: <Layout className="w-6 h-6 text-primary" />,
-    skills: ["React", "Redux", "Next.js", "Tailwind CSS", "Shadcn UI", "Flutter"]
+    skills: ["React", "Redux",   "Tailwind CSS", "Shadcn UI" ]
   },
   {
     title: "Backend",
     icon: <Server className="w-6 h-6 text-primary" />,
-    skills: ["Node.js", "Express", "RESTful APIs", "GraphQL", "Socket.io"]
+    skills: ["Node.js", "Express", "RESTful APIs",   "Socket.io"]
   },
   {
     title: "Databases",
     icon: <Database className="w-6 h-6 text-primary" />,
-    skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"]
+    skills: ["MongoDB", "MySQL" ]
   },
   {
     title: "Tools & Other",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Git", "GitHub", "VS Code", "Postman", "Jest", "Data Structures & Algorithms"]
+    skills: ["Git", "GitHub", "VS Code", "Postman",   "Data Structures & Algorithms"]
   },
   {
     title: "Design & UI/UX",

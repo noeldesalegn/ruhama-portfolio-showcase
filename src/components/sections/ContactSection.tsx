@@ -68,7 +68,7 @@ const ContactSection: React.FC = () => {
                         href="mailto:ruhama.bekele@example.com" 
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
                       >
-                        ruhama.bekele@example.com
+                        ruhamabekele156@gmail.com
                       </a>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const ContactSection: React.FC = () => {
                         href="tel:+251912345678" 
                         className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
                       >
-                        +251 91 234 5678
+                        +251-947-169-355
                       </a>
                     </div>
                   </div>
